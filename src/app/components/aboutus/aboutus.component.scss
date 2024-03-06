@@ -1,0 +1,41 @@
+/* Add these styles to your CSS file */
+
+.about-page {
+    background-color: #f8f8f8; /* Set the background color of the page */
+  }
+  
+//   .about-container {
+//     max-width: 600px; /* Set the maximum width of the container */
+//     margin: 0 auto; /* Center the container */
+//   }
+  
+  .about-card {
+    background-color: #fff; /* Set the background color of the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .about-title {
+    font-size: 24px; /* Set the font size of the card title */
+  }
+  
+  .about-content {
+    color: #7a0606; /* Set the text color of the card content */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+  }
+
+  p{
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .brand-highlight {
+    color: #e74c3c; /* Set a brand color to highlight specific words */
+  }
+
+  .about-image {
+    width: 100%; /* Make the image fill the width of its container */
+    max-height: 150px; /* Set a maximum height for the image */
+    object-fit: cover; /* Maintain the aspect ratio and cover the container */
+  }
+  

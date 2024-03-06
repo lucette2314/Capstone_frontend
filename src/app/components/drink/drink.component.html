@@ -1,0 +1,33 @@
+<app-header pageTitle="Drink Menu"></app-header>
+
+<ion-content class="ion-content-centered" [fullscreen]="true">
+  <div *ngFor="let drink of drinks" class="ion-card-container">
+    <ion-card style="height: auto;" color="light">
+      <div class="heart-icon">&#9825;</div>
+      <div class="image-container">
+        <img [src]="'http://localhost:3000/uploads/' + drink.image" class="img-responsive rounded">
+      </div>
+      <ion-card-header>
+        <ion-card-title>{{ drink.name }}</ion-card-title>
+        <ion-card-subtitle class="category">{{ getCategoryName(drink.drink_category_id) }}</ion-card-subtitle>
+        <ion-card-subtitle class="description">{{ drink.description }}</ion-card-subtitle>
+        <hr>
+        <div class="price-and-quantity">
+          <ion-card-subtitle class="price">{{ drink.price | currency:'USD':'symbol':'1.2-2' }}</ion-card-subtitle>
+          <div class="quantity-controls">
+            <ion-button (click)="decreaseQuantity(drink)" color="medium" class="menos" style="font-size: 12px; padding: 1px 1px;">-</ion-button>
+            <span class="textqty">{{ drink.quantity }}</span>
+            <ion-button (click)="increaseQuantity(drink)" color="medium" class="menos" style="font-size: 12px; padding: 1px 1px;">+</ion-button>
+          </div>
+        </div>
+        <hr>
+
+        <ion-button  class="cart" color="medium" (click)="addToCart(drink)">Add to Cart ({{ drink.quantity }})</ion-button>
+
+      </ion-card-header>
+    </ion-card>
+
+  </div>
+</ion-content>
+
+<ion-button [routerLink]="['/checkout']">View Cart</ion-button>

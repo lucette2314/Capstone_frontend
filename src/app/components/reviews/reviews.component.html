@@ -1,0 +1,56 @@
+<app-header pageTitle="Tell us how we did"></app-header>
+
+<ion-content [fullscreen]="true">
+
+    <form [formGroup]="reviewForm">
+
+      <ion-item>
+        <hr>
+        <ion-label position="stacked" class="form-label" style="font-size: 30px;">First Name</ion-label>
+        <hr>
+        <ion-input type="text" position="center" class="form-control" formControlName="first_name"></ion-input>
+        <hr>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="stacked" class="form-label" style="font-size: 30px;">Last Name</ion-label>
+        <hr>
+        <ion-input type="text" position="center" class="form-control" formControlName="last_name"></ion-input>
+        <hr>
+      </ion-item>
+ 
+      <ion-item>
+        <ion-label position="stacked" class="form-label" style="font-size: 30px;">Date</ion-label>
+        <hr>
+        <ion-input formControlName="date" type="date"></ion-input>
+        <hr>
+      </ion-item>
+      
+        <ion-item>
+          <ion-label position="stacked" class="form-label" style="font-size: 30px;">Rating</ion-label>
+          <hr>
+          <ion-select formControlName="rating">
+            <ion-select-option value="5">5 - Excellent</ion-select-option>
+            <ion-select-option value="4">4 - Very Good</ion-select-option>
+            <ion-select-option value="3">3 - Good</ion-select-option>
+            <ion-select-option value="2">2 - Fair</ion-select-option>
+            <ion-select-option value="1">1 - Poor</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+  
+      <ion-item>
+        <ion-label position="stacked" class="form-label" style="font-size: 30px;">Comments</ion-label>
+        <hr>
+        <ion-input type="text" position="center" class="form-control" formControlName="comments"></ion-input>
+        <hr>
+      </ion-item>
+      <hr>
+
+      <!-- Submit Button -->
+      <ion-button fill="outline" class="submit" (click)="onSubmit()">Submit</ion-button>
+  
+    </form>
+  
+  </ion-content>
+  

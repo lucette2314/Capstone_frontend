@@ -1,0 +1,95 @@
+ion-card-title{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 300%;
+    text-align: center;
+}
+
+.price{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 200%;
+    text-align: center;
+}
+
+.category{
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    color:darkgrey
+}
+
+.description{
+    text-align: center;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; /* Align items vertically in the center */
+  }
+  
+  .image-container {
+    text-align: center; /* Center the image horizontally */
+  }
+  
+  .img-responsive {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    width: 100%; /* Set a fixed width if needed */
+    max-height: 180px; /* Set a fixed height if needed */
+    object-fit: cover; /* Optional: Maintain aspect ratio and cover the container */
+    
+  }
+
+  ion-card {
+    width: 450px; /* Set your desired width */
+    height: auto; /* Set your desired height or use auto for content-based height */
+  }
+  
+  .ion-content-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .ion-card-container {
+    width: 100%;
+    max-width: 500px; /* Set a maximum width for the card container if needed */
+    padding: 1px;
+  }
+
+  .cart{
+    font-size: 12px; /* Adjust the font size as needed */
+    padding: 1px 130px; /* Adjust the padding as needed */
+  }
+  
+  .heart-icon {
+    font-size: 45px; /* Adjust the size as needed */
+    color: red; /* Adjust the color as needed */
+    margin-right: 8px; /* Adjust the margin to create space between the heart and the image */
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .price-and-quantity {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    gap: 1px; // Adjust the gap as needed
+
+  }
+
+  .textqty{
+    font-size: 25px;
+  }
+
+  .menos{
+    font-size: 15px; /* Adjust the font size as needed */
+
+  }

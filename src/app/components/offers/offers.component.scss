@@ -1,0 +1,59 @@
+/* Add more styles to make it fancier */
+ion-content.ion-content-background {
+    background-color: #f5f5f5; /* Set the background color */
+  }
+  
+  .offer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .offer-item {
+    width: 500px; /* Adjust the width of each card */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .offer-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .offer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .offer-content {
+    padding: 10px;
+  }
+  
+  .offer-icon {
+    color: #4CAF50; /* Set the color for icons */
+  }
+  
+  .offer-label {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .offer-description,
+  .offer-dates,
+  .offer-discount {
+    margin-left: 10px;
+    color: #555;
+  }
+  
+  .offer-button {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Add more styles as needed */
+  

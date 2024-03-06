@@ -1,0 +1,77 @@
+/* Add this to your component's stylesheet (e.g., your-component.scss) */
+
+ion-content {
+    --ion-background-color: #f4f4f4;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  ion-item {
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    font-size: 20px;
+    color: #3498db;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    font-size: 18px;
+    color: #555;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #fff;
+  }
+  
+  .form-control::placeholder {
+    color: #aaa;
+  }
+  
+  .submit {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 100%;
+    --background: #3498db;
+    --color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit:hover {
+    --background: #297fb8;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  ion-select {
+    font-size: 18px;
+    color: #3498db;
+  }
+  
+  /* Additional styles for a more modern look */
+  
+  ion-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

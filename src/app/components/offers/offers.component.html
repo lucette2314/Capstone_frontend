@@ -1,0 +1,37 @@
+<app-header pageTitle="Offers"></app-header>
+
+<ion-content [fullscreen]="true" class="ion-content-background">
+
+  <ion-list *ngFor="let offer of offers" class="offer-list">
+   
+    <ion-card class="offer-item" button [routerLink]="['/offer-details', offer.id]">
+      <ion-card-header class="offer-header">
+        <ion-card-title class="offer-title">{{ offer.title }}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content class="offer-content">
+        <ion-item lines="none">
+          <ion-icon name="pricetag-outline" slot="start" class="offer-icon"></ion-icon>
+          <ion-label class="offer-label">Description:</ion-label>
+          <h2 class="offer-description">{{ offer.description }}</h2>
+        </ion-item>
+    
+        <ion-item lines="none">
+          <ion-icon name="calendar" slot="start" class="offer-icon"></ion-icon>
+          <ion-label class="offer-label">Validity:</ion-label>
+          <h2 class="offer-dates">{{ offer.valid_from | date:'mediumDate' }} to {{ offer.valid_to | date:'mediumDate' }}</h2>
+        </ion-item>
+    
+        <ion-item lines="none">
+          <ion-icon name="cash" slot="start" class="offer-icon"></ion-icon>
+          <ion-label class="offer-label">Discount:</ion-label>
+          <h2 class="offer-discount">{{ offer.discount }}%</h2>
+        </ion-item>
+
+        <ion-button (click)="presentAlert()">Add Promo</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-list>
+
+</ion-content>

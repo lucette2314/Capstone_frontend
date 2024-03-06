@@ -1,0 +1,36 @@
+<app-header pageTitle="Checkout"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let food of foods">
+      <ion-label>{{ food.name }}</ion-label>
+      <ion-thumbnail slot="start">
+        <img [src]="'http://localhost:3000/uploads/' + food.image" alt="{{ food.name }}">
+      </ion-thumbnail>
+      <div class="quantity-controls">
+        <ion-button (click)="decreaseQuantity(food)" color="medium" class="menos" style="font-size: 12px; padding: 1px 1px;">-</ion-button>
+        <span class="textqty">{{ food.quantity }}</span>
+        <ion-button (click)="increaseQuantity(food)" color="medium" class="menos" style="font-size: 12px; padding: 1px 1px;">+</ion-button>
+      </div>
+      <ion-icon name="trash" (click)="deleteFood(food)"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item *ngFor="let drink of drinks">
+      <ion-label>{{ drink.name }}</ion-label>
+      <ion-thumbnail slot="start">
+        <img [src]="'http://localhost:3000/uploads/' + drink.image" alt="{{ drink.name }}">
+      </ion-thumbnail>
+      <div class="quantity-controls">
+        <ion-button (click)="decreaseQuantity(drink)" color="medium" class="menos" style="font-size: 12px; padding: 1px 1px;">-</ion-button>
+        <span class="textqty">{{ drink.quantity }}</span>
+        <ion-button (click)="increaseQuantity(drink)" color="medium" class="menos" style="font-size: 12px; padding: 1px 1px;">+</ion-button>
+      </div>
+      <ion-icon name="trash" (click)="deleteFood(drink, true)"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" (click)="placeOrder()">Place Order</ion-button>
+  
+</ion-content>
